@@ -5,15 +5,25 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 ---
 
-###Q1.  Cheat Sheet of Commands  
+### Q1.  Cheat Sheet of Commands  
 
-Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
+Here's a list of items with which you should be familiar:  
+* show current working directory path
+* creating a directory
+* deleting a directory
+* creating a file using `touch` command
+* deleting a file
+* renaming a file
+* listing hidden files
+* copying a file from one directory to another
+
+Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
-###Q2.  List Files in Unix   
+### Q2.  List Files in Unix   
 
 What do the following commands do:  
 `ls`  
@@ -28,7 +38,7 @@ What do the following commands do:
 
 ---
 
-###Q3.  More List Files in Unix  
+### Q3.  More List Files in Unix  
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
@@ -36,7 +46,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 ---
 
-###Q4.  Xargs   
+### Q4.  Xargs   
 
 What does `xargs` do? Give an example of how to use it.
 

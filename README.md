@@ -18,11 +18,15 @@ Metis data science bootcamp. Students should budget **60+ hours** to complete th
 
 **All exercises _must_ be completed before the first day of class.**
 
- Step 0. [Fork Repo](00-fork_repo.md)
+ Step 0. [Fork Repo and Getting Started with Git & GitHub](00-fork_repo.md)
  
  Step 0.5 [Review Markdown formatting before beginning work](/resources/markdown.md) 
  
- Step 1. [Install software on your computer](01-install.md)
+ Step 1.  Installation  
+ 
+ >Step 1a. [Install software on your computer](01a-install.md)  
+ 
+ >Step 1b. [Install Jupyter Notebook on your computer](01b-install_jupyter.md)  
  
  Step 2. [Choose and learn your editor(s)](02-editors.md)
  
@@ -35,6 +39,8 @@ Metis data science bootcamp. Students should budget **60+ hours** to complete th
  >Step 5a. [Learn Python](05a-python.md)  
  
  >Step 5b. [Advanced Python](05b-python_advanced.md)  
+ 
+ >Step 5c. [Python Pandas](05c-python_pandas.md)  
  
  Step 6. [Linear Algebra](06-linear_algebra.md)
  

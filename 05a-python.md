@@ -8,7 +8,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 ---
 
-###Q1. Lists &amp; Tuples
+### Q1. Lists &amp; Tuples
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
@@ -16,7 +16,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 ---
 
-###Q2. Lists &amp; Sets
+### Q2. Lists &amp; Sets
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
@@ -24,7 +24,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 ---
 
-###Q3. Lambda Function
+### Q3. Lambda Function
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
@@ -32,7 +32,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 ---
 
-###Q4. List Comprehension, Map &amp; Filter
+### Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
@@ -40,9 +40,9 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 ---
 
-###Complete the following problems by editing the files below:
+### Complete the following problems by editing the files below:
 
-###Q5. Datetime
+### Q5. Datetime
 Use Python to compute days between start and stop date.   
 a.  
 
@@ -73,17 +73,17 @@ Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
 ---
 
-###Q6. Strings
+### Q6. Strings
 Edit the 7 functions in [q6_strings.py](python/q6_strings.py)
 
 ---
 
-###Q7. Lists
+### Q7. Lists
 Edit the 5 functions in [q7_lists.py](python/q7_lists.py)
 
 ---
 
-###Q8. Parsing
+### Q8. Parsing
 Edit the 3 functions in [q8_parsing.py](python/q8_parsing.py)
 
 
