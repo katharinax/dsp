@@ -19,7 +19,7 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Attaching the [cheatsheet](https://goo.gl/Vmx5Sv) I made for my Unix/Linux course a few years ago.
 
 ---
 
@@ -34,7 +34,19 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **ls** lists files under the current directory  
+
+> > **ls -a** lists files under the current directory including hidden files
+
+> > **ls -l** lists files under the current directory along with file details  
+
+> > **ls -lh** is the same as **ls -l** except the **h** option prints out the file sizes in human-readable format  
+
+> > **ls -lah** lists files under the current directory including hidden files along with file details with file sizes in human-readable format  
+
+> > **ls -t** lists files under the current directory sorted by file modification timestamp in descending order  
+
+> > **ls -Glp** lists files under the current directory with the following specifications: 1. print out file details but omit the group ID 2. append file type indicator (e.g. foo/ means foo is a directory) after each of the listed file names
 
 ---
 
@@ -42,7 +54,15 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **ls -R** lists files recursively
+
+> > **ls -r** lists files under the current directory sorted by file name in descending order
+
+> > **ls -d** lists only directories under the current directory
+
+> > **ls -m** lists files under the current directory in a comma-separated format
+
+> > **ls -i** lists files under the current directory along with their inode information
 
 ---
 
@@ -50,7 +70,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **xargs** converts standard inputs into command arguments. For example, in `echo foo.txt | xargs touch`, **xargs** converts the standard input, **foo.txt** into the argument for **touch**. In contrast, some commands, such as **grep**, can process standard inputs directly; for example `ls | grep .md`. In these cases, **xargs** is not needed.
 
  
-
