@@ -15,7 +15,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    # raise NotImplementedError
+    count = 0
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
+            count += 1
+    return count
 
 
 def front_x(words):
@@ -32,7 +37,14 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    # raise NotImplementedError
+    xwords = []
+    nonxwords = words[:]
+    for word in words:
+        if word[0] == 'x':
+            xwords += [word]
+            nonxwords.remove(word)
+    return sorted(xwords) + sorted(nonxwords)
 
 
 def sort_last(tuples):
@@ -49,7 +61,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    # raise NotImplementedError
+    return sorted(tuples, key = lambda tup: tup[-1])
 
 
 def remove_adjacent(nums):
@@ -68,8 +81,16 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
-
+    # raise NotImplementedError
+    try:       
+        newList = [nums[0]]
+        for num in nums[1:]:
+            if num != newList[-1]:
+                newList += [num]
+        return newList
+    except:
+        return []
+    
 
 def linear_merge(list1, list2):
     """
@@ -85,4 +106,25 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    # raise NotImplementedError
+    list1_copy = list1[:]
+    list2_copy = list2[:]
+    merged = []
+    while list1_copy != [] and list2_copy != []:
+        if list1_copy[0] <= list2_copy[0]:
+            merged += [list1_copy[0]]
+            del list1_copy[0]
+        else:
+            merged += [list2_copy[0]]
+            del list2_copy[0]
+    if list1_copy != []:
+        merged += list1_copy
+    else:
+        merged += list2_copy
+    return merged
+
+
+        
+        
+    
+    
