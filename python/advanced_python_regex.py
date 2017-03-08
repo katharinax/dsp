@@ -5,10 +5,13 @@ Created on Fri Mar  3 21:35:35 2017
 
 @author: katharina
 """
-
+               
 import numpy as np
 import pandas as pd
 import re
+
+def valid_email(text):
+    return re.search(r"\w+@[\w\.]+", text) != None
 
 df = pd.read_csv("faculty.csv", sep = r",\s*", engine="python")
 
@@ -16,7 +19,7 @@ df = pd.read_csv("faculty.csv", sep = r",\s*", engine="python")
 degree_ct = {}
 for dgstring in df["degree"]:
     for dg in re.finditer(r"(?:^|\s)[\w\.]+(?=$|\s)", dgstring):
-        dg_cleaned = re.sub("[\. ]", "", dg.group(0))
+        dg_cleaned = re.sub(r"[\. ]", "", dg.group(0))
         if re.match(r"(?i)[a-z]+", dg_cleaned) != None:
             if dg_cleaned not in degree_ct.keys():
                 degree_ct[dg_cleaned] = 1
@@ -39,4 +42,35 @@ title_ct = pd.DataFrame(list(title_ct.items()), columns = ["Title", "N"])
 title_ct = title_ct.sort_values("N", ascending = False)
 print("There are a total of", title_ct.shape[0], "different titles.\n")
 print(title_ct.to_string(index = False)) 
+
+# Q3
+valid = np.vectorize(valid_email)(df["email"])
+email_list = list(df["email"][valid])
+print(email_list)
+    
+# Q4
+domain_set = set()
+for email in email_list:
+    domain = re.search(r"(?<=@)[\w\.]+(?=$|\s)", email)
+    domain_set.add(domain.group(0))
+print("There are a total of", len(domain_set), "different email domains.\n")
+print(domain_set)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
