@@ -37,7 +37,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 >> There are a total of 3 different titles.
 >>
 >> | Title                |   N  |
->> |----------------------|------|
+>> |:---------------------|-----:|
 >> |           Professor  |  13  |
 >> | Associate Professor  |  12  |
 >> | Assistant Professor  |  12  |
