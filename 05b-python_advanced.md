@@ -22,7 +22,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 >> There are a total of 8 different degrees.
 >>
 >> | Degree |    N |
->> |--------|------|
+>> |:-------|-----:|
 >> |   PhD  |   31 |
 >> |   ScD  |    6 |
 >> |   MPH  |    2 |
