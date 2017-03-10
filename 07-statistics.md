@@ -22,17 +22,17 @@ Complete the following exercises along with the questions in this file. Some can
 
 Communicate the problem, how you solved it, and the solution, within each of the following [markdown](https://guides.github.com/features/mastering-markdown/) files. (You can include code blocks and images within markdown.)
 
-## <a name="section-b"></a>2.  Why We Are Using Think Stats 
+## <a name="section-b"></a>2.  Why We Are Using Think Stats
 
-The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the ThinkStats repository on GitHub.  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you. 
+The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the ThinkStats repository on GitHub.  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you.
 
-For example, in the first exercise, the author has already written a function to compute Cohen's D.  **You could import it, or you could write your own code to practice python and develop a deeper understanding of the concept.** 
+For example, in the first exercise, the author has already written a function to compute Cohen's D.  **You could import it, or you could write your own code to practice python and develop a deeper understanding of the concept.**
 
 Think Stats uses a higher degree of python complexity from the python tutorials and introductions to python concepts, and that is intentional to prepare you for the bootcamp.  
 
 ---
 
-## <a name="section-c"></a>3.  Instructions for Cloning the Repo 
+## <a name="section-c"></a>3.  Instructions for Cloning the Repo
 Using the code referenced in the book, follow the step-by-step instructions below.  
 
 **Step 1. Create a directory on your computer where you will do the prework.  Below is an example:**
@@ -74,24 +74,49 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
 ### Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
-This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
+This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic.
 
 
 
-### Q5. Bayesian (Elvis Presley twin) 
+### Q5. Bayesian (Elvis Presley twin)
 
 Bayes' Theorem is an important tool in understanding what we really know, given evidence of other information we have, in a quantitative way.  It helps incorporate conditional probabilities into our conclusions.
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The probability of Elvis being an identical twin   
+>> = P(male identical twins | male twins)  
+>> = P(male identical twins) / P(male twins) &#8757; identical twins &#8834; twins  
+>>   
+>> For the numerator,   
+>> P(male identical twins)  
+>> = P(identical twins) * P(both male | identical twins)   
+>> = (1/300) * (1/2) &#8757; It can either be both boys or both girls
+>>
+>> For the denominator,  
+>> P(male twins)  
+>> = P(male identical twins) + P(male fraternal twins) &#8757; Different type of twins are mutually exclusive events  
+>> = (1/300) * (1/2) + P(male fraternal twins) * P(both male | fraternal twins)   
+>> = (1/300) * (1/2) + (1/125) * (1/4) &#8757; It can either be both boys, both girls, a boy a girl, or a girl a boy  
+>>  
+>> &#8756; Putting everything together, the probability of Elvis being an identical twin  
+>> = [(1/300) * (1/2)] / [(1/300) * (1/2) + (1/125) * (1/4)]  
+>> = 0.4545  
+>> = 45.45%
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist assumes there is an underlying "truth" to everything we want to measure. Statistics serves to estimate that truth, and that a lot of emphasis is placed on the likelihood of or how confident we are about those estimated statistics accurately portraying the truth.   
+>>   
+>> In the Bayesian universe, there is no "one truth". Bayesian improves the statistics as we gather more information. Bayesian's conditional probability is built off of this mindset. Mathematically, it follows three concepts:  
+>> 1. **Prior**: Information we already know  
+>> 2. **Likelihood**: The process (function) of observing new information given our prior information
+>> 3. **Posterior**: The end result of basing prior on those new information, which is assumed to be more informative and more accurate than the prior.
+>>
+>> Frequentist is more popular, especially among introductory statistical courses and modeling techniques; that said, Bayesian has actually been around for a long time and has been regaining its popularity as the necessary computational technology advances.
 
 ---
 
@@ -115,7 +140,7 @@ In the theoretical world, all data related to an experiment or a scientific prob
 
 Read Allen Downey's [Think Bayes](http://greenteapress.com/thinkbayes/) book.  It is available online for free, or you can buy a paper copy if you would like.
 
-[<img src="img/think_bayes.png" title="Think Bayes" style="float: left"; />](http://greenteapress.com/thinkbayes/) 
+[<img src="img/think_bayes.png" title="Think Bayes" style="float: left"; />](http://greenteapress.com/thinkbayes/)
 
 ---
 
