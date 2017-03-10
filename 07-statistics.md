@@ -113,7 +113,7 @@ How do frequentist and Bayesian statistics compare?
 >>   
 >> In the Bayesian universe, there is no "one truth". Bayesian improves the statistics as we gather more information. Bayesian's conditional probability is built off of this mindset. Mathematically, it follows three concepts:  
 >> 1. **Prior**: Information we already know  
->> 2. **Likelihood**: The process (function) of observing new information given our prior information
+>> 2. **Likelihood**: The process (function) of observing new information given our prior information  
 >> 3. **Posterior**: The end result of basing prior on those new information, which is assumed to be more informative and more accurate than the prior.
 >>
 >> Frequentist is more popular, especially among introductory statistical courses and modeling techniques; that said, Bayesian has actually been around for a long time and has been regaining its popularity as the necessary computational technology advances.
