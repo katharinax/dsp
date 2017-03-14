@@ -2,7 +2,7 @@
 
 ---
 
->> The two functions are as following:  
+>> The two functions are as follows:  
 >> ```python  
 >> def num_goals(lam):
 >>     """
