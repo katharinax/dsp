@@ -60,8 +60,10 @@ $ git clone https://github.com/AllenDowney/ThinkStats2.git
 
 ## <a name="section-d"></a>4.  Required Exercises
 
-*Include your Python code, results and explanation (where applicable).*
-
+*Include your Python code, results and explanation (where applicable).*  
+  
+>> My results, graphs, and explanations for Q1 to Q11 are in individual files listed below. All Python codes are [here](https://github.com/katharinax/ThinkStats2/blob/master/code/metis_hw07.py). 
+  
 ###Q1. [Think Stats Chapter 2 Exercise 4](statistics/2-4-cohens_d.md) (effect size of Cohen's d)  
 Cohen's D is an example of effect size.  Other examples of effect size are:  correlation between two variables, mean difference, regression coefficients and standardized test statistics such as: t, Z, F, etc. In this example, you will compute Cohen's D to quantify (or measure) the difference between two groups of data.   
 
